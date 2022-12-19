@@ -1,0 +1,15 @@
+{
+    "name": "Expenses by date",
+    "version": "1.0.1",
+    "description": "Break down expenses by day in beeline",
+    "manifest_version":3,
+    "author": "Edan Ben-Moshe",
+    "content_scripts": [{
+        "matches": ["https://prod2.beeline.com/amazon/Assignments/TimeAndExpense/TimeAndExpense.aspx"],
+        "js": ["content.js"]
+      }],
+    "background":{
+       "js": ["script.js"]
+    }
+    
+}
